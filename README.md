@@ -1,3 +1,21 @@
+#How can your friends push this repo
+If you want your friend to push a file to your repository, there are a few steps they will need to follow:
+
+Ask them to fork your repository: Your friend will need to create a fork of your repository by clicking the "Fork" button on your repository's page. This will create a copy of your repository in their GitHub account.
+
+Clone the forked repository: Next, your friend will need to clone the forked repository to their local machine using a Git client, such as Git Bash, GitKraken, or GitHub Desktop.
+
+Create a new branch: In the cloned repository, your friend should create a new branch using the Git client. They can do this by running the command git checkout -b branch-name, where branch-name is the name they want to give to the new branch.
+
+Make changes and commit them: Your friend can now make changes to the files they want to push to your repository. They can add, delete, or modify files as needed. Once they are done, they should commit the changes with a descriptive commit message.
+
+Push changes to the forked repository: With the changes committed, your friend should now push the changes to their forked repository by running the command git push origin branch-name, where branch-name is the name of the branch they created in step 3.
+
+Create a pull request: Finally, your friend should create a pull request by navigating to your repository's page and clicking the "New pull request" button. They should select their branch as the source branch and your repository's main branch as the target branch. They can then submit the pull request for your review.
+
+Once you receive the pull request, you can review the changes your friend made and decide whether to merge them into your repository.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
