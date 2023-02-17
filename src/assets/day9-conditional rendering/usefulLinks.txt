@@ -4,3 +4,4 @@ https://www.w3schools.com/react/react_conditional_rendering.asp
 https://www.robinwieruch.de/conditional-rendering-react/  
 
 
+https://medium.com/geekculture/stop-using-for-conditional-rendering-in-react-a0f7b96200f8

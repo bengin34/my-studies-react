@@ -35,17 +35,17 @@ export default class LoginControl extends Component {
   render() {
     const isLoggedIn = this.state.isLoggedIn;
     let button;
-    // if (isLoggedIn) {
-    //   button = <LogoutButton onClick={this.handleLogoutClick} />;
-    // } else {
-    //   button = <LoginButton onClick={this.handleLoginClick} />;
-    // }
-
-    {
-      isLoggedIn
-        ? (button = <LogoutButton onClick={this.handleLogoutClick} />)
-        : (button = <LoginButton onClick={this.handleLoginClick} />);
+    if (isLoggedIn) {
+      button = <LogoutButton onClick={this.handleLogoutClick} />;
+    } else {
+      button = <LoginButton onClick={this.handleLoginClick} />;
     }
+
+    // {
+    //   isLoggedIn
+    //     ? (button = <LogoutButton onClick={this.handleLogoutClick} />)
+    //     : (button = <LoginButton onClick={this.handleLoginClick} />);
+    // }
 
     return <div>{button}</div>;
   }

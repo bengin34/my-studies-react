@@ -2,12 +2,14 @@ import React from 'react'
 
 const ProblemAndApp = () => {
 
-  let  condition  = false ;
+  let  condition  = NaN ;
   return (
     <div>
       
       <h1>React</h1>
-     <h2>Conditional Rendering</h2> 
+
+     {condition !== NaN && <h2>Conditional Rendering</h2> }
+     {/* {condition ? <h2>Conditional Rendering</h2>  :  null } */}
     
     </div>
   )

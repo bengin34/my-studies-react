@@ -66,18 +66,21 @@ function DisplayLoggedIn() {
 function Rendering() {
     const [isLoggedIn, setIsLoggedIn] = useState(false);
     const handleLoginButton = () => {
-        if (isLoggedIn) {
-            setIsLoggedIn(false);
-        }
-        else {
-            setIsLoggedIn(true);
-        }
+        // if (isLoggedIn) {
+        //     setIsLoggedIn(false);
+        // }
+        // else {
+        //     setIsLoggedIn(true);
+        // }
+        setIsLoggedIn(!isLoggedIn)
     }
     return (
         <div>
             <h1 style={{ color: 'green' }}>GeeksforGeeks</h1>
             <h3>Conditionally Rendering Components in React</h3>
             {isLoggedIn == false ? <DisplayLoggedOut /> : <DisplayLoggedIn />}
+            {/* best partice  {!isLoggedIn  ? <DisplayLoggedOut /> : <DisplayLoggedIn />} */}
+
             <button onClick={handleLoginButton} className="btn btn-primary">
                 {isLoggedIn == false ? 'Log In' : 'Log Out'}
             </button>

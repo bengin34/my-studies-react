@@ -8,7 +8,7 @@ import ProblemAndApp from './ProblemAndApp';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <ProblemAndApp />
     {/* <ProblemAndApp /> */}
   </React.StrictMode>
 );

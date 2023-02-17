@@ -63,24 +63,24 @@ const MoreExamples = () => {
 //     }
 //   }
 
-//todo here is best practice
-//   function List({ list }) {
-//     if (!list) {
-//       return null;
-//     }
+// todo here is best practice
+  // function List({ list }) {
+  //   if (!list) {
+  //     return null;
+  //   }
   
-//     if (!list.length) {
-//       return <p>Sorry, the list is empty.</p>;
-//     }
+  //   if (!list.length) {
+  //     return <p>Sorry, the list is empty.</p>;
+  //   }
   
-//     return (
-//       <div>
-//         {list.map(item => (
-//           <Item item={item} />
-//         ))}
-//       </div>
-//     );
-//   }
+  //   return (
+  //     <div>
+  //       {list.map(item => (
+  //         <Item item={item} />
+  //       ))}
+  //     </div>
+  //   );
+  // }
 
 
 //?? switch case example
