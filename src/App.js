@@ -3,8 +3,8 @@
 // import Main from './Components-day8/Main';
 // import Footer from './Components-day8/Footer'; 
 
-// import Greeting from "./Components-day9/Greeting";
-// import LoginControl from "./Components-day9/LoginControl"
+import Greeting from "./Components-day9/Greeting";
+import LoginControl from "./Components-day9/LoginControl"
 
 
 import React from "react";
@@ -37,12 +37,12 @@ function App() {
 
   return(
     <div>
-    {/* <Greeting  isLoggedIn={true}/> */}
+    <Greeting  isLoggedIn={false}/>
     {/* <LoginControl /> */}
 
     {/* <MailBox unreadMessages= {messages} /> */}
     {/* <Rendering /> */}
-    <MoreExamples />
+    {/* <MoreExamples /> */}
     </div>
   )
   };

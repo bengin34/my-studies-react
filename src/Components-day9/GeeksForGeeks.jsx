@@ -1,3 +1,13 @@
+
+
+//!! This page uses Material UI framework 
+//!! You need to write these lines to the Terminal
+//*** For NPM   copy this
+// npm install @mui/material @emotion/react @emotion/styled
+//*** For yarn   copy this
+// yarn add @mui/material @emotion/react @emotion/styled
+
+
 import React from 'react'
 import { useState } from 'react';
 import Card from '@mui/material/Card';
