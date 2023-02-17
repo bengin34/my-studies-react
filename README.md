@@ -1,4 +1,4 @@
-#How can your friends push this repo
+# How can your friends push this repo
 If you want your friend to push a file to your repository, there are a few steps they will need to follow:
 
 Ask them to fork your repository: Your friend will need to create a fork of your repository by clicking the "Fork" button on your repository's page. This will create a copy of your repository in their GitHub account.
