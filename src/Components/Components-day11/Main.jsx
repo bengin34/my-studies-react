@@ -1,24 +1,27 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
-
-class Main extends Component {
-  state = {
+import {useState} from 'react'
+const Main=()=> {
+  
+	const [state, setState] = useState(
+	 {
     firstName: '',
     message: '',
     key: '',
-  }
+  })
+
   handleClick = (e) => {
    
-    this.setState({
+    setState({
       message: 'Welcome to the world of events',
     })
   }
     handleMouseMove = (e) => {
-    this.setState({ message: 'mouse is moving' })
+    setState({ message: 'mouse is moving' })
   }
   
   handleChange = (e) => {
-    this.setState({
+	setState({
       firstName: e.target.value,
       message: e.target.value,
     })
@@ -26,46 +29,46 @@ class Main extends Component {
 
     
   handleKeyPress = (e) => {
-    this.setState({
+    setState({
       message:
         `${e.target.value} has been pressed and the keycode is` + e.charCode,
     })
   }
     handleBlur = (e) => {
-    this.setState({ message: 'Input field has been blurred' })
+    setState({ message: 'Input field has been blurred' })
   }
   
   handleCopy = (e) => {
-    this.setState({
+    setState({
       message: 'Using 30 Days Of React for commercial purpose is not allowed',
     })
   }
-  render() {
+  
     return (
       <div>
         <h1>Welcome to the World of Events</h1>
 
-        <button onClick={this.handleClick}>Click Me</button>
-        <button onMouseMove={this.handleMouseMove}>Move mouse on me</button>
-        <p onCopy={this.handleCopy}>
+        <button onClick={handleClick}>Click Me</button>
+        <button onMouseMove={handleMouseMove}>Move mouse on me</button>
+        <p onCopy={handleCopy}>
           Check copy right permission by copying this text
         </p>
 
-        <p>{this.state.message}</p>
+        <p>{state.message}</p>
         <label htmlFor=''> Test for onKeyPress Event: </label>
-        <input type='text' onKeyPress={this.handleKeyPress} />
+        <input type='text' onKeyPress={handleKeyPress} />
         <br />
 
         <label htmlFor=''> Test for onBlur Event: </label>
-        <input type='text' onBlur={this.handleBlur} />
+        <input type='text' onBlur={handleBlur} />
 
-        <form onSubmit={this.handleSubmit}>
+        <form onSubmit={handleSubmit}>
           <div>
             <label htmlFor='firstName'>First Name: </label>
             <input
-              onChange={this.handleChange}
+              onChange={handleChange}
               name='firstName'
-              value={this.state.value}
+              value={state.value}
             />
           </div>
 
@@ -76,5 +79,5 @@ class Main extends Component {
       </div>
     )
   }
-}
+
 export default Main
