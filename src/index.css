@@ -1,3 +1,13 @@
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; */
+.problem{
+	padding: 30px;
+	background-color: aqua;
+	color:red;
+	width: 200px;
+	text-align: center;
+	position: relative;
+	
+
+}
