@@ -12,7 +12,7 @@ const Main=()=> {
 
   handleClick = (e) => {
    
-    setState({
+    setState({...state,
       message: 'Welcome to the world of events',
     })
   }
