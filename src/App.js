@@ -1,12 +1,10 @@
-// import MainFunc from "./Components/Components-day11/MainFunc";
-import Problem from "./Components/Components-day11/Problem";
+import UseEffectS from "./Components/components13/UseEffectS";
+
 
 function App() {
   return (
     <div>
-      {/* < Main/>  */}
-      {/* <MainFunc/> */}
-      <Problem />
+      <UseEffectS/>
     </div>
   );
 }
